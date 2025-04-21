@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Roman Numeral List</h2>
+        <ol type="I">
+            <li>Introduction to HTML</li>
+            <li>Working with CSS</li>
+            <li>JavaScript Basics</li>
+            <li>Building Web Forms</li>
+            <li>Publishing a Website</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Beautiful Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Nature Landscape" width="600">
+    </section>
+
+    <!-- Table of 5 Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>123 Main St</td>
+                    <td>+123456789</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>456 Pine Ave</td>
+                    <td>+987654321</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Stone</td>
+                    <td>789 Oak Dr</td>
+                    <td>+111222333</td>
+                    <td>emily@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mike Ross</td>
+                    <td>321 Elm St</td>
+                    <td>+444555666</td>
+                    <td>mike@example.com</td>
+                </tr>
+                <tr>
+                    <td>Lisa Ray</td>
+                    <td>654 Willow Rd</td>
+                    <td>+777888999</td>
+                    <td>lisa@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6"><br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown Field -->
+            <label for="country">Select Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">--Choose--</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male" required> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br><br>
+
+            <!-- Checkboxes -->
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobbies" value="reading"> Reading<br>
+            <input type="checkbox" name="hobbies" value="sports"> Sports<br>
+            <input type="checkbox" name="hobbies" value="music"> Music<br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
